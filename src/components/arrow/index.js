@@ -61,6 +61,7 @@ var Arrow = Base.extend({
 
     if (e.navInfo.finalDirection === true){
       turnType = 'FINISH';
+      this.labelEl.html('');
     } else {
       var direction = e.navInfo.nextDirection;
       if (!direction) return;
